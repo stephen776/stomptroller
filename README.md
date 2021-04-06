@@ -1,4 +1,5 @@
-# MIDI-Stomp: Simple arduino powered MIDI footcontroller for Line 6 HX Stomp
+# Stomptroller 
+*Simple arduino powered MIDI footcontroller for Line 6 HX Stomp*
 
 ## Libraries
 https://github.com/mathertel/OneButton
