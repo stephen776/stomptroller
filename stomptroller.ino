@@ -2,13 +2,13 @@
 #include <MIDI.h>
 
 /**  Button Config
- *    ---------
- *    | 1    2 |
- *    |        |
- *    |        |
- *    | 3    4 |
- *    ---------
- */
+      ---------
+      | 1    2 |
+      |        |
+      |        |
+      | 3    4 |
+      ---------
+*/
 
 // configure buttons
 OneButton button1(2, true, true);
@@ -37,7 +37,7 @@ void setup() {
   button4.attachLongPressStart(button4LongPressStart);
 
   // MIDI setup
-   MIDI.begin();
+  MIDI.begin();
 }
 
 void loop() {
@@ -58,7 +58,7 @@ void button1Press() {
 
 void button1LongPressStart() {
   // FS4
-  MIDI.sendControlChange(52, 127, 1);
+  MIDI.sendControlChange(72, 0, 1);
 }
 
 // button 2 Events
@@ -69,7 +69,7 @@ void button2Press() {
 
 void button2LongPressStart() {
   // FS5
-  MIDI.sendControlChange(53, 127, 1);
+  MIDI.sendControlChange(72, 127, 1);
 }
 
 // button 3 Events
